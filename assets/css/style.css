@@ -335,9 +335,10 @@ ul {
   text-transform: uppercase;
 }
 
-.eyebrow > span {
+.eyebrow-line {
   width: 32px;
   height: 1px;
+  flex: 0 0 32px;
   background: currentColor;
 }
 
@@ -348,13 +349,32 @@ ul {
   line-height: 1.5;
 }
 
+.eyebrow-copy {
+  display: grid;
+  gap: 3px;
+}
+
+.eyebrow-copy strong {
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.eyebrow-copy small {
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.45;
+}
+
 .hero h1 {
-  max-width: 780px;
+  max-width: 100%;
   margin-bottom: 30px;
-  font-size: clamp(3.1rem, 5.25vw, 5.7rem);
+  font-size: clamp(3rem, 4.5vw, 5.3rem);
   font-weight: 720;
-  letter-spacing: -0.07em;
-  line-height: 0.95;
+  letter-spacing: -0.06em;
+  line-height: 0.98;
+  text-wrap: balance;
 }
 
 .hero h1 em,
@@ -524,6 +544,7 @@ ul {
   gap: 12px;
 }
 
+.floating-card-award,
 .floating-card-focus {
   color: var(--white);
   background: rgba(11, 49, 51, 0.96);
@@ -541,6 +562,7 @@ ul {
   text-transform: uppercase;
 }
 
+.floating-card-award .floating-label,
 .floating-card-focus .floating-label {
   color: var(--mint);
 }
@@ -1609,8 +1631,8 @@ ul {
 /* Responsive */
 @media (max-width: 1100px) {
   .hero-layout {
-    grid-template-columns: minmax(0, 1.06fr) minmax(340px, 0.94fr);
-    gap: 40px;
+    grid-template-columns: minmax(0, 1.12fr) minmax(340px, 0.88fr);
+    gap: 32px;
   }
 
   .proof-item {
@@ -1822,7 +1844,7 @@ ul {
     letter-spacing: 0.07em;
   }
 
-  .hero .eyebrow > span {
+  .hero .eyebrow-line {
     width: 24px;
     margin-top: 0.72em;
     flex: 0 0 24px;
