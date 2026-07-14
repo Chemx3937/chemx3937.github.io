@@ -341,10 +341,17 @@ ul {
   background: currentColor;
 }
 
+.hero .eyebrow {
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+}
+
 .hero h1 {
   max-width: 780px;
   margin-bottom: 30px;
-  font-size: clamp(3.4rem, 6vw, 6.7rem);
+  font-size: clamp(3.1rem, 5.25vw, 5.7rem);
   font-weight: 720;
   letter-spacing: -0.07em;
   line-height: 0.95;
@@ -429,9 +436,12 @@ ul {
 
 .hero-visual {
   position: relative;
-  min-height: 590px;
-  display: grid;
-  place-items: center;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
 }
 
 .portrait-shell {
@@ -460,18 +470,6 @@ ul {
   object-position: center 25%;
   border-radius: 170px 170px 18px 18px;
   filter: saturate(0.82) contrast(1.02);
-}
-
-.portrait-index {
-  position: absolute;
-  z-index: 2;
-  top: 58px;
-  right: -20px;
-  color: rgba(255, 255, 255, 0.68);
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  writing-mode: vertical-rl;
 }
 
 .portrait-caption {
@@ -508,9 +506,9 @@ ul {
 }
 
 .floating-card {
-  position: absolute;
-  z-index: 3;
-  width: 180px;
+  position: relative;
+  width: auto;
+  min-height: 118px;
   padding: 18px;
   color: var(--text);
   background: rgba(246, 248, 245, 0.96);
@@ -519,15 +517,14 @@ ul {
   box-shadow: var(--shadow);
 }
 
-.floating-card-award {
-  top: 82px;
-  left: -4px;
+.hero-card-row {
+  width: min(430px, 100%);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
 }
 
 .floating-card-focus {
-  right: -18px;
-  bottom: 58px;
-  width: 210px;
   color: var(--white);
   background: rgba(11, 49, 51, 0.96);
   border-color: rgba(255, 255, 255, 0.13);
@@ -575,11 +572,10 @@ ul {
 }
 
 .proof-item {
-  min-height: 112px;
+  min-height: 122px;
   padding: 24px clamp(16px, 2.5vw, 30px);
   display: flex;
   align-items: center;
-  gap: 16px;
   border-right: 1px solid rgba(255, 255, 255, 0.13);
 }
 
@@ -591,24 +587,19 @@ ul {
   border-right: 0;
 }
 
-.proof-item > span {
-  color: var(--mint);
-  font-family: var(--font-mono);
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: -0.05em;
-}
-
 .proof-item p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.52);
-  font-size: 11px;
-  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 14px;
+  line-height: 1.55;
 }
 
 .proof-item strong {
+  display: inline-block;
+  margin-bottom: 3px;
   color: rgba(255, 255, 255, 0.88);
-  font-size: 12px;
+  font-size: 16px;
+  line-height: 1.35;
 }
 
 /* Shared section styles */
@@ -1622,14 +1613,6 @@ ul {
     gap: 40px;
   }
 
-  .floating-card-award {
-    left: -20px;
-  }
-
-  .floating-card-focus {
-    right: -10px;
-  }
-
   .proof-item {
     padding-inline: 16px;
   }
@@ -1830,25 +1813,31 @@ ul {
   }
 
   .hero h1 {
-    font-size: clamp(3rem, 15vw, 5rem);
+    font-size: clamp(2.75rem, 12vw, 4.2rem);
+  }
+
+  .hero .eyebrow {
+    align-items: flex-start;
+    font-size: 12px;
+    letter-spacing: 0.07em;
+  }
+
+  .hero .eyebrow > span {
+    width: 24px;
+    margin-top: 0.72em;
+    flex: 0 0 24px;
   }
 
   .hero-visual {
-    min-height: 545px;
+    min-height: 0;
   }
 
   .portrait-shell {
     width: min(350px, 78%);
   }
 
-  .floating-card-award {
-    top: 62px;
-    left: 0;
-  }
-
-  .floating-card-focus {
-    right: 0;
-    bottom: 42px;
+  .hero-card-row {
+    width: min(430px, 100%);
   }
 
   .section {
@@ -1944,20 +1933,20 @@ ul {
 
   .hero-visual {
     min-height: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    display: flex;
   }
 
   .portrait-shell {
     width: 88%;
-    grid-column: 1 / -1;
+  }
+
+  .hero-card-row {
+    width: min(350px, 100%);
+    grid-template-columns: 1fr;
   }
 
   .floating-card {
-    position: static;
-    width: auto;
-    min-height: 118px;
+    min-height: 0;
   }
 
   .proof-grid {
