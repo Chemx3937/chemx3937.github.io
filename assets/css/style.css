@@ -1504,10 +1504,12 @@ ul {
 }
 
 .education-status {
-  padding: 6px 9px;
+  padding: 7px 11px;
   color: var(--teal-dark);
   background: #d7eee5;
   border-radius: 999px;
+  font-size: 11px;
+  line-height: 1.2;
 }
 
 .education-status-light {
