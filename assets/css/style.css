@@ -1394,7 +1394,7 @@ ul {
 
 .skill-group h3 {
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: clamp(1.25rem, 1.5vw, 1.4rem);
   letter-spacing: -0.025em;
 }
 
@@ -1422,16 +1422,21 @@ ul {
 .additional-info {
   margin: 24px 0 0;
   padding-top: 22px;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px 16px;
   color: var(--muted);
   border-top: 1px solid var(--line);
-  font-size: 11px;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .additional-info span {
-  margin-right: 16px;
+  margin-right: 0;
   color: var(--teal);
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
