@@ -1402,6 +1402,29 @@ ul {
   margin-top: auto;
 }
 
+.skill-pills-stacked {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.skill-pill-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 7px;
+}
+
+.skill-pill-row + .skill-pill-row {
+  gap: 5px;
+}
+
+.skill-pill-row + .skill-pill-row span {
+  padding-inline: 7px;
+  font-size: 9px;
+  white-space: nowrap;
+}
+
 .skill-pills span {
   padding: 7px 10px;
   color: #405557;
