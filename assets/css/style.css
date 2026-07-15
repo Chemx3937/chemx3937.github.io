@@ -1486,6 +1486,7 @@ ul {
   margin-bottom: 58px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 18px;
   color: var(--teal);
@@ -1494,6 +1495,12 @@ ul {
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.education-topline > span:first-child {
+  font-size: clamp(1.05rem, 1.75vw, 1.3rem);
+  letter-spacing: 0.06em;
+  line-height: 1.3;
 }
 
 .education-status {
