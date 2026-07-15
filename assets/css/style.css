@@ -544,6 +544,13 @@ ul {
   gap: 12px;
 }
 
+.floating-card-award,
+.floating-card-focus {
+  color: var(--white);
+  background: rgba(11, 49, 51, 0.96);
+  border-color: rgba(255, 255, 255, 0.13);
+}
+
 .floating-label {
   margin-bottom: 9px;
   display: block;
@@ -553,6 +560,11 @@ ul {
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+.floating-card-award .floating-label,
+.floating-card-focus .floating-label {
+  color: var(--mint);
 }
 
 .floating-card strong,
