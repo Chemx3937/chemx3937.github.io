@@ -761,6 +761,11 @@ ul {
   line-height: 1.6;
 }
 
+.focus-item p strong {
+  color: var(--teal);
+  font-weight: 750;
+}
+
 /* Projects */
 .project-featured {
   margin-bottom: 26px;
