@@ -1199,6 +1199,7 @@ ul {
   z-index: 1;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 16px;
   color: rgba(255, 255, 255, 0.48);
@@ -1207,6 +1208,19 @@ ul {
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.result-type {
+  font-family: var(--font-sans);
+  font-size: clamp(1.25rem, 2.2vw, 1.65rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.patent-topline .result-type {
+  color: var(--mint);
 }
 
 .patent-status {
@@ -1276,11 +1290,32 @@ ul {
 
 .awards-list {
   display: grid;
-  grid-auto-rows: 1fr;
+  grid-template-rows: auto repeat(3, minmax(190px, 1fr));
   overflow: hidden;
   background: rgba(255, 255, 255, 0.66);
   border: 1px solid rgba(7, 29, 31, 0.1);
   border-radius: var(--radius-lg);
+}
+
+.awards-header {
+  padding: 20px clamp(28px, 4vw, 40px);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 18px;
+  color: var(--teal);
+  background: rgba(140, 245, 186, 0.13);
+  border-bottom: 1px solid rgba(7, 29, 31, 0.1);
+}
+
+.awards-summary {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .award-item {
