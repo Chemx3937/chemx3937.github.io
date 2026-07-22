@@ -22,12 +22,9 @@
   <link rel="canonical" href="https://chemx3937.github.io/">
   <link rel="icon" href="assets/img/favicon/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
-  <link rel="stylesheet" href="assets/css/style.css?v=20260720-4">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260722-1">
   <title>Chemin Ahn — Robotics Engineer</title>
 
-  <script>
-    document.documentElement.classList.add('js');
-  </script>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -51,31 +48,36 @@
 </head>
 
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
+  <a class="skip-link" href="#main-content" data-i18n="a11y.skip">Skip to content</a>
 
   <header class="site-header" id="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#intro" aria-label="Chemin Ahn, back to top">
+      <a class="brand" href="#intro" aria-label="Chemin Ahn, back to top" data-i18n-aria-label="a11y.brandHome">
         <span class="brand-mark" aria-hidden="true">CA</span>
         <span class="brand-copy">
           <strong>Chemin Ahn</strong>
-          <small>Robotics Engineer</small>
+          <small data-i18n="brand.role">Robotics Engineer</small>
         </span>
       </a>
+
+      <div class="language-switcher" role="group" aria-label="Language" data-i18n-aria-label="a11y.language">
+        <button type="button" data-language="en" aria-pressed="true" aria-label="English">EN</button>
+        <button type="button" data-language="ko" aria-pressed="false" aria-label="한국어">KR</button>
+      </div>
 
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
         <span></span>
         <span></span>
       </button>
 
-      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-        <a href="#about" data-nav>About</a>
-        <a href="#projects" data-nav>Work</a>
-        <a href="#experience" data-nav>Experience</a>
-        <a href="#recognition" data-nav>Recognition</a>
-        <a href="#skills" data-nav>Skills</a>
-        <a href="#education" data-nav>Education</a>
-        <a class="nav-resume" href="assets/resume/Chemin_Ahn_CV.pdf" target="_blank" rel="noopener noreferrer">Résumé <span aria-hidden="true">↗</span></a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-i18n-aria-label="a11y.primaryNav">
+        <a href="#about" data-nav data-i18n="nav.about">About</a>
+        <a href="#projects" data-nav data-i18n="nav.projects">Work</a>
+        <a href="#experience" data-nav data-i18n="nav.experience">Experience</a>
+        <a href="#recognition" data-nav data-i18n="nav.recognition">Recognition</a>
+        <a href="#skills" data-nav data-i18n="nav.skills">Skills</a>
+        <a href="#education" data-nav data-i18n="nav.education">Education</a>
+        <a class="nav-resume" href="assets/resume/Chemin_Ahn_CV.pdf" target="_blank" rel="noopener noreferrer"><span data-i18n="nav.resume">Résumé</span> <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
@@ -92,19 +94,19 @@
               <small>Force-feedback Leader-arm Teleoperation · Impedance Control</small>
             </span>
           </p>
-          <h1 id="hero-title">Vision–force learning for <em>dexterous bimanual control.</em></h1>
-          <p class="hero-lede">
+          <h1 id="hero-title" data-i18n-html="hero.title">Vision–force learning for <em>dexterous bimanual control.</em></h1>
+          <p class="hero-lede" data-i18n="hero.lede">
             I develop learning-based systems for precise dual-arm and dual-hand
             manipulation from multimodal demonstrations.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">View featured projects <span aria-hidden="true">↓</span></a>
-            <a class="button button-secondary" href="assets/resume/Chemin_Ahn_CV.pdf" target="_blank" rel="noopener noreferrer">View résumé <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="#projects"><span data-i18n="hero.projects">View featured projects</span> <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="assets/resume/Chemin_Ahn_CV.pdf" target="_blank" rel="noopener noreferrer"><span data-i18n="hero.resume">View résumé</span> <span aria-hidden="true">↗</span></a>
           </div>
 
-          <div class="hero-links" aria-label="Social links">
-            <a href="mailto:chemx3937@gmail.com">Email</a>
+          <div class="hero-links" aria-label="Social links" data-i18n-aria-label="a11y.socialLinks">
+            <a href="mailto:chemx3937@gmail.com" data-i18n="common.email">Email</a>
             <a href="https://github.com/Chemx3937" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
             <a href="https://www.linkedin.com/in/chem1222/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
             <a href="https://www.youtube.com/@%EC%B3%84-r3i" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">↗</span></a>
@@ -113,22 +115,22 @@
 
         <div class="hero-visual" data-reveal>
           <div class="portrait-shell">
-            <img src="assets/img/Chemin_Ahn_img.jpg" alt="Portrait of Chemin Ahn" width="326" height="435">
+            <img src="assets/img/Chemin_Ahn_img.jpg" alt="Portrait of Chemin Ahn" data-i18n-alt="hero.portraitAlt" width="326" height="435">
             <div class="portrait-caption">
               <span class="status-dot" aria-hidden="true"></span>
-              <span>M.S. Researcher<br><strong>Robotics Innovatory, SKKU</strong></span>
+              <span data-i18n-html="hero.portraitCaption">M.S. Researcher<br><strong>Robotics Innovatory, SKKU</strong></span>
             </div>
           </div>
 
           <div class="hero-card-row">
             <div class="floating-card floating-card-award">
-              <span class="floating-label">2026 Highlight</span>
-              <strong>1st Prize</strong>
+              <span class="floating-label" data-i18n="hero.highlight">2026 Highlight</span>
+              <strong data-i18n="hero.prize">1st Prize</strong>
               <small>KRoC RED Show</small>
             </div>
 
             <div class="floating-card floating-card-focus">
-              <span class="floating-label">Current Focus</span>
+              <span class="floating-label" data-i18n="hero.focusLabel">Current Focus</span>
               <strong>Multimodal Imitation Learning</strong>
               <small>Vision + Force</small>
             </div>
@@ -136,18 +138,18 @@
         </div>
       </div>
 
-      <div class="container proof-grid" aria-label="Career highlights" data-reveal>
+      <div class="container proof-grid" aria-label="Career highlights" data-i18n-aria-label="a11y.careerHighlights" data-reveal>
         <div class="proof-item">
-          <p><strong>Patent application</strong><br>Force-feedback leader arm</p>
+          <p data-i18n-html="hero.proofPatent"><strong>Patent application</strong><br>Force-feedback leader arm</p>
         </div>
         <div class="proof-item">
-          <p><strong>Robotics Conference Award</strong><br>1st Prize · KRoC 2026 RED Show</p>
+          <p data-i18n-html="hero.proofAward"><strong>Robotics Conference Award</strong><br>1st Prize · KRoC 2026 RED Show</p>
         </div>
         <div class="proof-item">
-          <p><strong>Robot Control Internship</strong><br>Doosan Robotics · Jul - Oct 2024</p>
+          <p data-i18n-html="hero.proofInternship"><strong>Robot Control Internship</strong><br>Doosan Robotics · Jul - Oct 2024</p>
         </div>
         <div class="proof-item">
-          <p><strong>Final M.S. GPA</strong><br>4.0 / 4.5 · SKKU</p>
+          <p data-i18n-html="hero.proofGpa"><strong>Final M.S. GPA</strong><br>4.0 / 4.5 · SKKU</p>
         </div>
       </div>
     </section>
@@ -155,24 +157,24 @@
     <section class="section section-light" id="about" aria-labelledby="about-title">
       <div class="container">
         <div class="section-heading" data-reveal>
-          <p class="section-kicker"><span>01</span> Profile</p>
-          <h2 id="about-title">Researching the bridge between <em>human intent</em> and robot action.</h2>
+          <p class="section-kicker" data-i18n-html="about.kicker"><span>01</span> Profile</p>
+          <h2 id="about-title" data-i18n-html="about.title">Researching the bridge between <em>human intent</em> and robot action.</h2>
         </div>
 
         <div class="about-layout">
           <div class="about-copy" data-reveal>
-            <p class="lead-paragraph">
+            <p class="lead-paragraph" data-i18n="about.lead">
               I am a Mechanical Engineering M.S. student at Sungkyunkwan University
               specializing in robotics. My work focuses on learning and control systems
               for manipulators that can acquire precise, transferable skills from human demonstrations.
             </p>
-            <p>
+            <p data-i18n="about.teleopBody">
               I have built a VR-tracker teleoperation system and, separately, a
               force-feedback leader-arm teleoperation system designed specifically to collect
               high-quality demonstration data. I also developed a ROS 2 visual-servoing package during
               an internship with the Robot Control Team at Doosan Robotics.
             </p>
-            <p>
+            <p data-i18n="about.learningBody">
               For imitation learning, I have evaluated multiple policies and modified their
               internal architectures to improve learning performance. My current research
               extends vision–proprioception policy architectures to learn from force as an
@@ -185,21 +187,21 @@
               <span class="focus-number">01</span>
               <div>
                 <h3>Imitation Learning</h3>
-                <p><strong>Multimodal imitation learning with vision and force</strong> for dexterous manipulation, including evaluation of multiple policies and refinement of their internal architectures.</p>
+                <p data-i18n-html="about.focusLearning"><strong>Multimodal imitation learning with vision and force</strong> for dexterous manipulation, including evaluation of multiple policies and refinement of their internal architectures.</p>
               </div>
             </article>
             <article class="focus-item">
               <span class="focus-number">02</span>
               <div>
                 <h3>Teleoperation</h3>
-                <p><strong>Force-feedback leader-arm teleoperation</strong> for high-quality demonstration collection, alongside a separate VR-tracker teleoperation system.</p>
+                <p data-i18n-html="about.focusTeleoperation"><strong>Force-feedback leader-arm teleoperation</strong> for high-quality demonstration collection, alongside a separate VR-tracker teleoperation system.</p>
               </div>
             </article>
             <article class="focus-item">
               <span class="focus-number">03</span>
               <div>
                 <h3>Robot Control</h3>
-                <p>Impedance control, visual servoing, and gravity compensation.</p>
+                <p data-i18n="about.focusControl">Impedance control, visual servoing, and gravity compensation.</p>
               </div>
             </article>
           </div>
@@ -210,40 +212,40 @@
     <section class="section section-ink" id="projects" aria-labelledby="projects-title">
       <div class="container">
         <div class="section-heading section-heading-inverse" data-reveal>
-          <p class="section-kicker"><span>02</span> Projects</p>
+          <p class="section-kicker" data-i18n-html="projects.kicker"><span>02</span> Projects</p>
           <div class="heading-row">
-            <h2 id="projects-title">Robotics systems built from <em>research to real hardware.</em></h2>
+            <h2 id="projects-title" data-i18n-html="projects.title">Robotics systems built from <em>research to real hardware.</em></h2>
           </div>
         </div>
 
         <article class="project-featured" data-reveal>
           <div class="project-media">
-            <img src="assets/img/project_leader_arm.png" alt="Illustration of a dual-arm leader teleoperation device" width="1024" height="1024" loading="lazy">
-            <span class="media-label">Featured · Teleoperation</span>
+            <img src="assets/img/project_leader_arm.png" alt="Illustration of a dual-arm leader teleoperation device" data-i18n-alt="projects.leaderAlt" width="1024" height="1024" loading="lazy">
+            <span class="media-label" data-i18n="projects.featuredLabel">Featured · Teleoperation</span>
           </div>
           <div class="project-body">
             <div class="project-meta">
               <span>01</span>
-              <span>Research Project</span>
+              <span data-i18n="projects.researchProject">Research Project</span>
             </div>
             <div class="achievement-badges">
-              <span>1st Prize · KRoC 2026</span>
-              <span>Patent Application Filed</span>
+              <span data-i18n="projects.firstPrizeBadge">1st Prize · KRoC 2026</span>
+              <span data-i18n="projects.patentBadge">Patent Application Filed</span>
             </div>
             <h3>Force-Feedback Leader–Follower Teleoperation</h3>
-            <p>
+            <p data-i18n="projects.leaderDescription">
               Developed a leader–follower system with gravity compensation and operator
               force feedback for contact-rich manipulation, designed to improve the quality
               of demonstrations for force-aware imitation learning. The same leader-arm
               interface also supports teleoperation of robot models in NVIDIA Isaac Sim.
             </p>
             <ul class="project-outcomes">
-              <li>Single-arm and dual-arm + hands teleoperation</li>
-              <li>Force feedback, gripper feedback, and gravity compensation</li>
-              <li>Impedance-control integration</li>
-              <li>Leader-arm teleoperation in NVIDIA Isaac Sim</li>
+              <li data-i18n="projects.leaderOutcome1">Single-arm and dual-arm + hands teleoperation</li>
+              <li data-i18n="projects.leaderOutcome2">Force feedback, gripper feedback, and gravity compensation</li>
+              <li data-i18n="projects.leaderOutcome3">Impedance-control integration</li>
+              <li data-i18n="projects.leaderOutcome4">Leader-arm teleoperation in NVIDIA Isaac Sim</li>
             </ul>
-            <div class="tag-list" aria-label="Technologies">
+            <div class="tag-list" aria-label="Technologies" data-i18n-aria-label="a11y.technologies">
               <span>Python</span><span>C++</span><span>ROS 1/2</span><span>Dynamixel</span><span>Isaac Sim</span><span>SOLIDWORKS</span>
             </div>
             <div class="project-links">
@@ -257,13 +259,13 @@
         <div class="project-grid">
           <article class="project-card" data-reveal>
             <div class="project-card-media project-card-media-imitation">
-              <img src="assets/img/project_imitation_learning.png" alt="Illustration of a dual-arm robot learning a manipulation task" width="1536" height="1024" loading="lazy">
+              <img src="assets/img/project_imitation_learning.png" alt="Illustration of a dual-arm robot learning a manipulation task" data-i18n-alt="projects.imitationAlt" width="1536" height="1024" loading="lazy">
               <span>Robot Learning</span>
             </div>
             <div class="project-card-content">
-              <div class="project-meta"><span>02</span><span>Research Project</span></div>
+              <div class="project-meta"><span>02</span><span data-i18n="projects.researchProject">Research Project</span></div>
               <h3>Imitation Learning for Dexterous Manipulation</h3>
-              <p>Evaluated and customized multiple policy architectures, collected teleoperation demonstrations, and deployed policies across single-arm, dual-arm, and dual-arm-with-hands setups. Current work extends vision–proprioception inputs with force.</p>
+              <p data-i18n="projects.imitationDescription">Evaluated and customized multiple policy architectures, collected teleoperation demonstrations, and deployed policies across single-arm, dual-arm, and dual-arm-with-hands setups. Current work extends vision–proprioception inputs with force.</p>
               <div class="tag-list"><span>Python</span><span>PyTorch</span><span>Imitation Learning</span><span>ROS 1/2</span></div>
               <div class="project-links">
               <a href="https://youtu.be/Vs-ICyzwaLc" target="_blank" rel="noopener noreferrer">Dual-arm + hands <span aria-hidden="true">↗</span></a>
@@ -275,71 +277,71 @@
 
           <article class="project-card" data-reveal>
             <div class="project-card-media project-card-media-visual-servoing">
-              <img src="assets/img/project_visual_servoing.png" alt="Illustration representing a visual-servoing robot system" width="1024" height="851" loading="lazy">
+              <img src="assets/img/project_visual_servoing.png" alt="Illustration representing a visual-servoing robot system" data-i18n-alt="projects.servoingAlt" width="1024" height="851" loading="lazy">
               <span>Robot Control</span>
             </div>
             <div class="project-card-content">
               <div class="project-meta"><span>03</span><span>Doosan Robotics</span></div>
               <h3>ROS 2 Visual Servoing</h3>
-              <p>Developed a Python-based ROS 2 visual-servoing package, built an SDF/Gazebo simulation, and ran the system in simulation and on physical hardware.</p>
+              <p data-i18n="projects.servoingDescription">Developed a Python-based ROS 2 visual-servoing package, built an SDF/Gazebo simulation, and ran the system in simulation and on physical hardware.</p>
               <div class="tag-list"><span>Python</span><span>ROS 2</span><span>Gazebo</span><span>SDF</span><span>Doosan Robotics</span></div>
               <div class="project-links">
-                <a href="https://github.com/DoosanRobotics/doosan-robot2/tree/humble/dsr_example2/dsr_visualservoing" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
-                <a href="https://youtu.be/9UFAdaa_PR8?si=650mDblh9Q3cs-qq" target="_blank" rel="noopener noreferrer">Demo <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/DoosanRobotics/doosan-robot2/tree/humble/dsr_example2/dsr_visualservoing" target="_blank" rel="noopener noreferrer"><span data-i18n="common.sourceCode">Source code</span> <span aria-hidden="true">↗</span></a>
+                <a href="https://youtu.be/9UFAdaa_PR8?si=650mDblh9Q3cs-qq" target="_blank" rel="noopener noreferrer"><span data-i18n="common.demo">Demo</span> <span aria-hidden="true">↗</span></a>
               </div>
             </div>
           </article>
 
           <article class="project-card" data-reveal>
             <div class="project-card-media">
-              <img src="assets/img/project_vr_tracker.png" alt="Illustration of VR-tracker teleoperation with a dual-arm robot" width="1536" height="1024" loading="lazy">
+              <img src="assets/img/project_vr_tracker.png" alt="Illustration of VR-tracker teleoperation with a dual-arm robot" data-i18n-alt="projects.vrAlt" width="1536" height="1024" loading="lazy">
               <span>Teleoperation</span>
             </div>
             <div class="project-card-content">
-              <div class="project-meta"><span>04</span><span>Research Project</span></div>
+              <div class="project-meta"><span>04</span><span data-i18n="projects.researchProject">Research Project</span></div>
               <h3>VR-Tracker Teleoperation</h3>
-              <p>Built a VR-tracker teleoperation system for demonstration collection with transformation-matrix-based safety limits and a SLAM-enabled variant.</p>
+              <p data-i18n="projects.vrDescription">Built a VR-tracker teleoperation system for demonstration collection with transformation-matrix-based safety limits and a SLAM-enabled variant.</p>
               <div class="tag-list"><span>Python</span><span>ROS 1/2</span><span>VR Trackers</span><span>SLAM</span></div>
               <div class="project-links">
-                <a href="https://youtu.be/ToG8sNmdli0?si=vpEZ58_luY0bn-TM" target="_blank" rel="noopener noreferrer">Teleoperation demo <span aria-hidden="true">↗</span></a>
-                <a href="https://youtu.be/yQAdfKhJR1M?si=8hTUjNPmF3f2XpNz" target="_blank" rel="noopener noreferrer">SLAM variant <span aria-hidden="true">↗</span></a>
+                <a href="https://youtu.be/ToG8sNmdli0?si=vpEZ58_luY0bn-TM" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.teleoperationDemo">Teleoperation demo</span> <span aria-hidden="true">↗</span></a>
+                <a href="https://youtu.be/yQAdfKhJR1M?si=8hTUjNPmF3f2XpNz" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.slamVariant">SLAM variant</span> <span aria-hidden="true">↗</span></a>
               </div>
             </div>
           </article>
 
           <article class="project-card" data-reveal>
             <div class="project-card-media">
-              <img src="assets/img/DuPA.png" alt="Autonomous medication preparation and delivery robot system" width="1536" height="1024" loading="lazy">
+              <img src="assets/img/DuPA.png" alt="Autonomous medication preparation and delivery robot system" data-i18n-alt="projects.medicationAlt" width="1536" height="1024" loading="lazy">
               <span>Integrated Robotics</span>
             </div>
             <div class="project-card-content">
-              <div class="project-meta"><span>05</span><span>KG-KAIROS · 2nd Prize</span></div>
-              <h3>Medication Preparation &amp; Delivery</h3>
-              <p>Designed a manipulator-and-AMR workflow that verifies patient information, prepares prescribed medication, and delivers it autonomously.</p>
+              <div class="project-meta"><span>05</span><span data-i18n="projects.kairosMeta">KG-KAIROS · 2nd Prize</span></div>
+              <h3 data-i18n="projects.medicationTitle">Medication Preparation &amp; Delivery</h3>
+              <p data-i18n="projects.medicationDescription">Designed a manipulator-and-AMR workflow that verifies patient information, prepares prescribed medication, and delivers it autonomously.</p>
               <div class="tag-list"><span>Python</span><span>C++</span><span>ROS 1</span><span>Streamlit</span><span>Arduino</span></div>
               <div class="project-links">
-                <a href="https://github.com/Chemx3937/DuPA" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
-                <a href="https://www.youtube.com/watch?v=-mTXpCWZacI" target="_blank" rel="noopener noreferrer">Demo <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/Chemx3937/DuPA" target="_blank" rel="noopener noreferrer"><span data-i18n="common.sourceCode">Source code</span> <span aria-hidden="true">↗</span></a>
+                <a href="https://www.youtube.com/watch?v=-mTXpCWZacI" target="_blank" rel="noopener noreferrer"><span data-i18n="common.demo">Demo</span> <span aria-hidden="true">↗</span></a>
               </div>
             </div>
           </article>
 
           <article class="project-card project-card-wide" data-reveal>
             <div class="project-card-media">
-              <img src="assets/img/Autonomous mobile robot_project.png" alt="Custom autonomous mobile robot platform" width="1536" height="1024" loading="lazy">
+              <img src="assets/img/Autonomous mobile robot_project.png" alt="Custom autonomous mobile robot platform" data-i18n-alt="projects.amrAlt" width="1536" height="1024" loading="lazy">
               <span>Autonomous Systems</span>
             </div>
             <div class="project-card-content">
-              <div class="project-meta"><span>06</span><span>Capstone · 2nd Prize</span></div>
-              <h3>Custom AMR: SLAM &amp; Planner Comparison</h3>
-              <p>Built a custom AMR and compared four navigation configurations combining GMapping and Hector SLAM with TEB and DWA local planners.</p>
+              <div class="project-meta"><span>06</span><span data-i18n="projects.capstoneMeta">Capstone · 2nd Prize</span></div>
+              <h3 data-i18n="projects.amrTitle">Custom AMR: SLAM &amp; Planner Comparison</h3>
+              <p data-i18n="projects.amrDescription">Built a custom AMR and compared four navigation configurations combining GMapping and Hector SLAM with TEB and DWA local planners.</p>
               <ul class="compact-outcomes">
-                <li>Raspberry Pi, Arduino Mega, encoder motors, and 2D LIDAR</li>
-                <li>ROS Navigation Stack integration and performance comparison</li>
+                <li data-i18n="projects.amrOutcome1">Raspberry Pi, Arduino Mega, encoder motors, and 2D LIDAR</li>
+                <li data-i18n="projects.amrOutcome2">ROS Navigation Stack integration and performance comparison</li>
               </ul>
               <div class="tag-list"><span>Python</span><span>C++</span><span>ROS 1</span><span>SLAM</span><span>2D LIDAR</span></div>
               <div class="project-links">
-                <a href="https://www.youtube.com/watch?v=whuUySDWIwA" target="_blank" rel="noopener noreferrer">Watch demo <span aria-hidden="true">↗</span></a>
+                <a href="https://www.youtube.com/watch?v=whuUySDWIwA" target="_blank" rel="noopener noreferrer"><span data-i18n="common.watchDemo">Watch demo</span> <span aria-hidden="true">↗</span></a>
               </div>
             </div>
           </article>
@@ -350,31 +352,31 @@
     <section class="section section-light" id="experience" aria-labelledby="experience-title">
       <div class="container">
         <div class="section-heading" data-reveal>
-          <p class="section-kicker"><span>03</span> Experience</p>
-          <h2 id="experience-title">Research translated into <em>industrial robotics.</em></h2>
+          <p class="section-kicker" data-i18n-html="experience.kicker"><span>03</span> Experience</p>
+          <h2 id="experience-title" data-i18n-html="experience.title">Research translated into <em>industrial robotics.</em></h2>
         </div>
 
         <article class="experience-card" data-reveal>
           <div class="experience-date">
             <span>2024</span>
-            <p>Jul — Oct<br>Seongnam, Korea</p>
+            <p data-i18n-html="experience.date">Jul — Oct<br>Seongnam, Korea</p>
           </div>
           <div class="experience-main">
             <div class="experience-logo">
               <img src="assets/img/Doosan_Logo.jpg" alt="Doosan Robotics" width="2646" height="480" loading="lazy">
             </div>
-            <p class="experience-type">Industry Internship</p>
-            <h3>Robot Control Team Intern</h3>
+            <p class="experience-type" data-i18n="experience.type">Industry Internship</p>
+            <h3 data-i18n="experience.role">Robot Control Team Intern</h3>
             <a class="company-link" href="https://www.doosanrobotics.com/kr" target="_blank" rel="noopener noreferrer">Doosan Robotics <span aria-hidden="true">↗</span></a>
           </div>
           <div class="experience-details">
-            <p>Developed a visual-servoing example package for Doosan robot systems.</p>
+            <p data-i18n="experience.detail">Developed a visual-servoing example package for Doosan robot systems.</p>
             <ul>
-              <li>Implemented ROS 2 nodes in Python</li>
-              <li>Built an SDF/Gazebo simulation environment</li>
-              <li>Validated control in simulation and on physical hardware</li>
+              <li data-i18n="experience.bullet1">Implemented ROS 2 nodes in Python</li>
+              <li data-i18n="experience.bullet2">Built an SDF/Gazebo simulation environment</li>
+              <li data-i18n="experience.bullet3">Validated control in simulation and on physical hardware</li>
             </ul>
-            <a href="https://github.com/DoosanRobotics/doosan-robot2/tree/humble/dsr_example2/dsr_visualservoing" target="_blank" rel="noopener noreferrer">View package on GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/DoosanRobotics/doosan-robot2/tree/humble/dsr_example2/dsr_visualservoing" target="_blank" rel="noopener noreferrer"><span data-i18n="experience.github">View package on GitHub</span> <span aria-hidden="true">↗</span></a>
           </div>
         </article>
       </div>
@@ -383,69 +385,69 @@
     <section class="section section-soft" id="recognition" aria-labelledby="recognition-title">
       <div class="container">
         <div class="section-heading" data-reveal>
-          <p class="section-kicker"><span>04</span> Patent &amp; Awards</p>
-          <h2 id="recognition-title">Patent application and competition awards from <em>robotics research.</em></h2>
+          <p class="section-kicker" data-i18n-html="recognition.kicker"><span>04</span> Patent &amp; Awards</p>
+          <h2 id="recognition-title" data-i18n-html="recognition.title">Patent application and competition awards from <em>robotics research.</em></h2>
         </div>
 
         <div class="recognition-layout">
           <article class="patent-card" id="patents" data-reveal>
             <div class="patent-topline">
-              <span class="result-type">Patent</span>
-              <span class="patent-status"><i aria-hidden="true"></i> Application filed</span>
+              <span class="result-type" data-i18n="recognition.patent">Patent</span>
+              <span class="patent-status"><i aria-hidden="true"></i> <span data-i18n="recognition.filed">Application filed</span></span>
             </div>
             <p class="patent-mark" aria-hidden="true">P</p>
             <h3>Force-Feedback Leader–Follower Teleoperation System for Contact-Rich Robot Manipulation</h3>
-            <p>Inventor · System design · Force-feedback control · Teleoperation implementation</p>
+            <p data-i18n="recognition.responsibilities">Inventor · System design · Force-feedback control · Teleoperation implementation</p>
             <ul>
-              <li>Provides operator force feedback during contact-rich manipulation.</li>
-              <li>Designed to improve demonstration quality for force-aware imitation learning.</li>
+              <li data-i18n="recognition.patentBullet1">Provides operator force feedback during contact-rich manipulation.</li>
+              <li data-i18n="recognition.patentBullet2">Designed to improve demonstration quality for force-aware imitation learning.</li>
             </ul>
-            <small>Technical details remain undisclosed before patent publication.</small>
+            <small data-i18n="recognition.patentNote">Technical details remain undisclosed before patent publication.</small>
           </article>
 
           <div class="awards-list" id="rewards" data-reveal>
             <div class="awards-header">
-              <span class="result-type">Awards</span>
-              <span class="awards-summary">3 competition awards</span>
+              <span class="result-type" data-i18n="recognition.awards">Awards</span>
+              <span class="awards-summary" data-i18n="recognition.awardsSummary">3 competition awards</span>
             </div>
 
             <article class="award-item award-item-featured">
-              <div class="award-rank">1<span>st</span></div>
+              <div class="award-rank">1<span data-i18n="recognition.rankSuffix">st</span></div>
               <div class="award-copy">
                 <p>2026 · Korea Robotics Society</p>
                 <h3>KRoC RED Show — Demo Competition</h3>
-                <span>Force Feedback Leader Arm for High-Quality Demonstration Data using an F/T Sensor</span>
-                <p class="award-detail">Awarded in February 2026, the project is also associated with a filed patent application for the force-feedback leader-arm system.</p>
+                <span data-i18n="recognition.award1Subtitle">Force Feedback Leader Arm for High-Quality Demonstration Data using an F/T Sensor</span>
+                <p class="award-detail" data-i18n="recognition.award1Detail">Awarded in February 2026, the project is also associated with a filed patent application for the force-feedback leader-arm system.</p>
                 <div class="award-links">
-                  <a href="https://youtu.be/dhNTIGTX53Q?si=Ww5zoX_aph3xaf0Q" target="_blank" rel="noopener noreferrer">Demo <span aria-hidden="true">↗</span></a>
-                  <a href="assets/poster/chem_KRoC2026_REDSHOW_poster.pdf#toolbar=0&amp;navpanes=0" target="_blank" rel="noopener noreferrer">Poster <span aria-hidden="true">↗</span></a>
-                  <a href="https://kros.org/Conference/ConferenceView.asp?AC=0&amp;CODE=CC20250901&amp;CpPage=329#CONF" target="_blank" rel="noopener noreferrer">Winners list <span aria-hidden="true">↗</span></a>
+                  <a href="https://youtu.be/dhNTIGTX53Q?si=Ww5zoX_aph3xaf0Q" target="_blank" rel="noopener noreferrer"><span data-i18n="common.demo">Demo</span> <span aria-hidden="true">↗</span></a>
+                  <a href="assets/poster/chem_KRoC2026_REDSHOW_poster.pdf#toolbar=0&amp;navpanes=0" target="_blank" rel="noopener noreferrer"><span data-i18n="recognition.poster">Poster</span> <span aria-hidden="true">↗</span></a>
+                  <a href="https://kros.org/Conference/ConferenceView.asp?AC=0&amp;CODE=CC20250901&amp;CpPage=329#CONF" target="_blank" rel="noopener noreferrer"><span data-i18n="recognition.winners">Winners list</span> <span aria-hidden="true">↗</span></a>
                 </div>
               </div>
             </article>
 
             <article class="award-item">
-              <div class="award-rank">2<span>nd</span></div>
+              <div class="award-rank">2<span data-i18n="recognition.rankSuffix">nd</span></div>
               <div class="award-copy">
                 <p>2024 · Chung-Ang University LINC 3.0</p>
                 <h3>Capstone Design Contest</h3>
-                <span>Sensor and navigation-algorithm analysis for autonomous mobile robots</span>
-                <p class="award-detail">Awarded in June 2024, the study compared sensor options with navigation-algorithm characteristics for autonomous mobile robot design.</p>
+                <span data-i18n="recognition.award2Subtitle">Sensor and navigation-algorithm analysis for autonomous mobile robots</span>
+                <p class="award-detail" data-i18n="recognition.award2Detail">Awarded in June 2024, the study compared sensor options with navigation-algorithm characteristics for autonomous mobile robot design.</p>
                 <div class="award-links">
-                  <a href="https://youtu.be/whuUySDWIwA?si=Z6PxcJieZwThwxSi" target="_blank" rel="noopener noreferrer">Demo <span aria-hidden="true">↗</span></a>
+                  <a href="https://youtu.be/whuUySDWIwA?si=Z6PxcJieZwThwxSi" target="_blank" rel="noopener noreferrer"><span data-i18n="common.demo">Demo</span> <span aria-hidden="true">↗</span></a>
                 </div>
               </div>
             </article>
 
             <article class="award-item">
-              <div class="award-rank">2<span>nd</span></div>
+              <div class="award-rank">2<span data-i18n="recognition.rankSuffix">nd</span></div>
               <div class="award-copy">
                 <p>2024 · KG ICT</p>
                 <h3>KG-KAIROS Youth AI Robotics Program</h3>
-                <span>Pharmaceutical preparation and autonomous delivery using a cobot and AMR</span>
-                <p class="award-detail">Awarded in June 2024, the system paired a cobot for pharmaceutical preparation with an AMR for autonomous delivery.</p>
+                <span data-i18n="recognition.award3Subtitle">Pharmaceutical preparation and autonomous delivery using a cobot and AMR</span>
+                <p class="award-detail" data-i18n="recognition.award3Detail">Awarded in June 2024, the system paired a cobot for pharmaceutical preparation with an AMR for autonomous delivery.</p>
                 <div class="award-links">
-                  <a href="https://youtu.be/-mTXpCWZacI?si=OEr9Qq3cj18q7jSd" target="_blank" rel="noopener noreferrer">Demo <span aria-hidden="true">↗</span></a>
+                  <a href="https://youtu.be/-mTXpCWZacI?si=OEr9Qq3cj18q7jSd" target="_blank" rel="noopener noreferrer"><span data-i18n="common.demo">Demo</span> <span aria-hidden="true">↗</span></a>
                 </div>
               </div>
             </article>
@@ -457,24 +459,24 @@
     <section class="section section-light" id="skills" aria-labelledby="skills-title">
       <div class="container">
         <div class="section-heading" data-reveal>
-          <p class="section-kicker"><span>05</span> Skills</p>
-          <h2 id="skills-title">My hands-on toolkit for <em>robotics research and development.</em></h2>
+          <p class="section-kicker" data-i18n-html="skills.kicker"><span>05</span> Skills</p>
+          <h2 id="skills-title" data-i18n-html="skills.title">My hands-on toolkit for <em>robotics research and development.</em></h2>
         </div>
 
         <div class="skills-grid">
           <article class="skill-group" data-reveal>
             <span class="skill-index">01</span>
-            <h3>Programming</h3>
+            <h3 data-i18n="skills.programming">Programming</h3>
             <div class="skill-pills"><span>Python</span><span>C++</span><span>MATLAB</span></div>
           </article>
           <article class="skill-group" data-reveal>
             <span class="skill-index">02</span>
-            <h3>Robotics &amp; Simulation</h3>
+            <h3 data-i18n="skills.roboticsSimulation">Robotics &amp; Simulation</h3>
             <div class="skill-pills"><span>ROS 1</span><span>ROS 2</span><span>Gazebo</span><span>Isaac Sim</span><span>Isaac Lab</span></div>
           </article>
           <article class="skill-group" data-reveal>
             <span class="skill-index">03</span>
-            <h3>Learning &amp; Vision</h3>
+            <h3 data-i18n="skills.learningVision">Learning &amp; Vision</h3>
             <div class="skill-pills skill-pills-stacked">
               <div class="skill-pill-row"><span>PyTorch</span><span>TensorFlow</span><span>OpenCV</span></div>
               <div class="skill-pill-row"><span>ACT</span><span>Diffusion Policy</span><span>DiT Policy</span><span>ACP</span></div>
@@ -482,47 +484,47 @@
           </article>
           <article class="skill-group" data-reveal>
             <span class="skill-index">04</span>
-            <h3>Scientific Computing</h3>
+            <h3 data-i18n="skills.scientificComputing">Scientific Computing</h3>
             <div class="skill-pills"><span>NumPy</span><span>Pandas</span><span>Matplotlib</span></div>
           </article>
           <article class="skill-group" data-reveal>
             <span class="skill-index">05</span>
-            <h3>Robot Platforms</h3>
+            <h3 data-i18n="skills.robotPlatforms">Robot Platforms</h3>
             <div class="skill-pills"><span>Doosan Robotics</span><span>Rainbow Robotics</span><span>Universal Robots</span></div>
           </article>
           <article class="skill-group" data-reveal>
             <span class="skill-index">06</span>
-            <h3>Engineering Tools</h3>
+            <h3 data-i18n="skills.engineeringTools">Engineering Tools</h3>
             <div class="skill-pills"><span>Git</span><span>SOLIDWORKS</span><span>SDF</span><span>Dynamixel</span><span>wandb</span></div>
           </article>
         </div>
 
-        <p class="additional-info" data-reveal><span>Additional</span> Republic of Korea Army · Sergeant · May 2021 — Nov 2022</p>
+        <p class="additional-info" data-i18n-html="skills.additional" data-reveal><span>Additional</span> Republic of Korea Army · Sergeant · May 2021 — Nov 2022</p>
       </div>
     </section>
 
     <section class="section section-paper" id="education" aria-labelledby="education-title">
       <div class="container">
         <div class="section-heading" data-reveal>
-          <p class="section-kicker"><span>06</span> Education</p>
-          <h2 id="education-title">Mechanical engineering,<br>focused on<br><em>intelligent robotics.</em></h2>
+          <p class="section-kicker" data-i18n-html="education.kicker"><span>06</span> Education</p>
+          <h2 id="education-title" data-i18n-html="education.title">Mechanical engineering,<br>focused on<br><em>intelligent robotics.</em></h2>
         </div>
 
         <div class="education-grid">
           <article class="education-card" data-reveal>
             <div class="education-topline">
-              <span>Master of Science</span>
-              <span class="education-status">Ongoing</span>
+              <span data-i18n="education.master">Master of Science</span>
+              <span class="education-status" data-i18n="education.ongoing">Ongoing</span>
             </div>
             <h3>Sungkyunkwan<br>University</h3>
-            <p class="education-location">Suwon, Republic of Korea</p>
+            <p class="education-location" data-i18n="education.suwon">Suwon, Republic of Korea</p>
             <div class="education-facts">
-              <p><span>Major</span>Mechanical Engineering</p>
+              <p data-i18n-html="education.majorFact"><span>Major</span>Mechanical Engineering</p>
               <p><span>GPA</span>4.0 / 4.5</p>
-              <p><span>Lab</span><a href="https://mecha.skku.ac.kr/roboticsinnovatory/index.do" target="_blank" rel="noopener noreferrer">Robotics Innovatory <b aria-hidden="true">↗</b></a></p>
+              <p><span data-i18n="education.labLabel">Lab</span><a href="https://mecha.skku.ac.kr/roboticsinnovatory/index.do" target="_blank" rel="noopener noreferrer">Robotics Innovatory <b aria-hidden="true">↗</b></a></p>
             </div>
             <div class="coursework">
-              <span>Selected Coursework</span>
+              <span data-i18n="education.coursework">Selected Coursework</span>
               <ul class="coursework-list">
                 <li>Intelligent Robotics</li>
                 <li>Robot Reinforcement Learning</li>
@@ -534,18 +536,18 @@
 
           <article class="education-card" data-reveal>
             <div class="education-topline">
-              <span>Bachelor of Science</span>
-              <span class="education-status education-status-light">Cum Laude</span>
+              <span data-i18n="education.bachelor">Bachelor of Science</span>
+              <span class="education-status education-status-light" data-i18n="education.honors">Cum Laude</span>
             </div>
             <h3>Chung-Ang<br>University</h3>
-            <p class="education-location">Seoul, Republic of Korea</p>
+            <p class="education-location" data-i18n="education.seoul">Seoul, Republic of Korea</p>
             <div class="education-facts">
-              <p><span>Major</span>Mechanical Engineering</p>
+              <p data-i18n-html="education.majorFact"><span>Major</span>Mechanical Engineering</p>
               <p><span>GPA</span>3.84 / 4.5</p>
-              <p><span>School</span><a href="https://me.cau.ac.kr/" target="_blank" rel="noopener noreferrer">Mechanical Engineering <b aria-hidden="true">↗</b></a></p>
+              <p><span data-i18n="education.schoolLabel">School</span><a href="https://me.cau.ac.kr/" target="_blank" rel="noopener noreferrer"><span data-i18n="education.department">Mechanical Engineering</span> <b aria-hidden="true">↗</b></a></p>
             </div>
             <div class="coursework">
-              <span>Selected Coursework</span>
+              <span data-i18n="education.coursework">Selected Coursework</span>
               <ul class="coursework-list">
                 <li>Robotics Engineering</li>
                 <li>Autonomous Control</li>
@@ -565,13 +567,13 @@
       <div class="contact-orbit contact-orbit-two" aria-hidden="true"></div>
       <div class="container contact-layout" data-reveal>
         <div>
-          <p class="section-kicker section-kicker-light"><span>07</span> Contact</p>
-          <h2 id="contact-title">Let’s build robots that <em>learn from people.</em></h2>
+          <p class="section-kicker section-kicker-light" data-i18n-html="contact.kicker"><span>07</span> Contact</p>
+          <h2 id="contact-title" data-i18n-html="contact.title">Let’s build robots that <em>learn from people.</em></h2>
         </div>
         <div class="contact-action">
-          <p>Interested in robotics research, engineering opportunities, or collaboration?</p>
+          <p data-i18n="contact.prompt">Interested in robotics research, engineering opportunities, or collaboration?</p>
           <a href="mailto:chemx3937@gmail.com">chemx3937@gmail.com <span aria-hidden="true">↗</span></a>
-          <div class="contact-social-links" role="group" aria-label="Professional profiles">
+          <div class="contact-social-links" role="group" aria-label="Professional profiles" data-i18n-aria-label="a11y.professionalProfiles">
             <a href="https://www.linkedin.com/in/chem1222/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
             <a href="https://github.com/Chemx3937" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
           </div>
@@ -583,84 +585,12 @@
           <a href="https://github.com/Chemx3937" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/chem1222/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="https://www.youtube.com/@%EC%B3%84-r3i" target="_blank" rel="noopener noreferrer">YouTube</a>
-          <a href="#intro">Back to top ↑</a>
+          <a href="#intro" data-i18n="contact.backToTop">Back to top ↑</a>
         </div>
       </div>
     </section>
   </main>
 
-  <script>
-    const header = document.querySelector('.site-header');
-    const menuToggle = document.querySelector('.menu-toggle');
-    const siteNav = document.querySelector('.site-nav');
-    const mainContent = document.querySelector('main');
-    const navLinks = [...document.querySelectorAll('[data-nav]')];
-
-    const closeMenu = () => {
-      siteNav.classList.remove('is-open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-      menuToggle.setAttribute('aria-label', 'Open navigation');
-      document.body.classList.remove('menu-open');
-      mainContent.removeAttribute('inert');
-    };
-
-    menuToggle.addEventListener('click', () => {
-      const willOpen = !siteNav.classList.contains('is-open');
-      siteNav.classList.toggle('is-open', willOpen);
-      menuToggle.setAttribute('aria-expanded', String(willOpen));
-      menuToggle.setAttribute('aria-label', willOpen ? 'Close navigation' : 'Open navigation');
-      document.body.classList.toggle('menu-open', willOpen);
-      mainContent.toggleAttribute('inert', willOpen);
-    });
-
-    siteNav.addEventListener('click', (event) => {
-      if (event.target.closest('a')) closeMenu();
-    });
-
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') closeMenu();
-    });
-
-    const updateHeader = () => header.classList.toggle('is-scrolled', window.scrollY > 24);
-    updateHeader();
-    window.addEventListener('scroll', updateHeader, { passive: true });
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 920) closeMenu();
-    }, { passive: true });
-
-    const revealItems = document.querySelectorAll('[data-reveal]');
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    if (prefersReducedMotion || !('IntersectionObserver' in window)) {
-      revealItems.forEach((item) => item.classList.add('is-visible'));
-    } else {
-      const revealObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12, rootMargin: '0px 0px -40px' });
-      revealItems.forEach((item) => revealObserver.observe(item));
-    }
-
-    if ('IntersectionObserver' in window) {
-      const sections = navLinks
-        .map((link) => document.querySelector(link.getAttribute('href')))
-        .filter(Boolean);
-      const sectionObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          navLinks.forEach((link) => {
-            const isCurrent = link.getAttribute('href') === '#' + entry.target.id;
-            if (isCurrent) link.setAttribute('aria-current', 'true');
-            else link.removeAttribute('aria-current');
-          });
-        });
-      }, { rootMargin: '-35% 0px -55%', threshold: 0 });
-      sections.forEach((section) => sectionObserver.observe(section));
-    }
-  </script>
+  <script src="assets/js/portfolio.js?v=20260722-1"></script>
 </body>
 </html>
