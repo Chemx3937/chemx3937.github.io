@@ -831,19 +831,6 @@ html[data-language="en"] #about .about-copy > p:not(.lead-paragraph) {
   border-top: 1px solid var(--line);
 }
 
-html[data-language="en"] #about .focus-item-teleoperation {
-  order: -1;
-}
-
-html[data-language="en"] #about .focus-number {
-  font-size: 0;
-}
-
-html[data-language="en"] #about .focus-number::before {
-  content: attr(data-en-number);
-  font-size: 22px;
-}
-
 .focus-item {
   padding: 30px 0;
   display: grid;
@@ -874,6 +861,32 @@ html[data-language="en"] #about .focus-number::before {
 }
 
 .focus-item p strong {
+  color: var(--teal);
+  font-weight: 750;
+}
+
+.focus-bullets {
+  margin: 0;
+  padding-left: 1.25em;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.focus-bullets li::marker {
+  color: var(--teal);
+}
+
+.focus-bullets li + li {
+  margin-top: 4px;
+}
+
+.focus-bullets ul {
+  margin: 4px 0 0;
+  padding-left: 1.3em;
+}
+
+.focus-bullets strong {
   color: var(--teal);
   font-weight: 750;
 }

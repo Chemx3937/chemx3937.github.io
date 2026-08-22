@@ -52,9 +52,9 @@
     'about.teleopBody': '고품질 demonstration data 수집을 위해 설계된<br>force-feedback leader-arm teleoperation system과<br>별도의 VR-tracker teleoperation system을 구축했습니다.',
     'about.learningBody': '여러 policy를 평가하고 내부 architecture를 개선해<br>learning performance를 높이며, vision–proprioception<br>policy architecture에 force를 추가 modality로 확장해<br>dual arm - hand robot을 이용한 학습기반 제어를 연구합니다.',
     'about.rosBody': 'Doosan Robotics의 Robot Control Team 인턴십 동안<br>ROS 2 visual-servoing package를 개발했습니다.',
-    'about.focusLearning': '정교한 manipulation을 위한 <strong>vision과 force 기반<br>Multimodal imitation learning</strong>으로, 여러 policy를 평가하고<br>내부 architecture를 개선합니다.',
-    'about.focusTeleoperation': '고품질 demonstration data 수집을 위한<br><strong>Force-feedback leader-arm teleoperation</strong>과<br>별도의 VR-tracker teleoperation system을 구축했습니다.',
-    'about.focusControl': 'Impedance control, visual servoing 및 gravity compensation.',
+    'about.focusLearning': '<li><strong>Multimodal imitation learning (Vision - Force)</strong></li><li>Applied policies:<ul><li>Diffusion Policy</li><li>ACT</li><li>DiT Policy</li><li>ACP</li></ul></li>',
+    'about.focusTeleoperation': '<li>Force Feedback Leader Arm</li><li>Contact Observer</li><li>VR-tracker teleoperation system.</li>',
+    'about.focusControl': '<li>Impedance Control</li><li>Gravity Compensation</li><li>Visual Servoing</li>',
 
     'projects.kicker': '<span>02</span> 프로젝트',
     'projects.title': '연구를 <em>실제 하드웨어로 구현한</em> 로봇 시스템.',
