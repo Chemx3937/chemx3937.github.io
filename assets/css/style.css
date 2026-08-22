@@ -440,6 +440,7 @@ ul {
 
 .hero h1.hero-title-detail {
   font-size: clamp(1.625rem, calc(2vw + 10px), 2.125rem);
+  letter-spacing: -0.02em;
   line-height: 1.35;
   text-wrap: initial;
 }
