@@ -805,7 +805,7 @@ ul {
   html[data-language="en"] #about .about-copy {
     display: flex;
     flex-direction: column;
-    gap: 42px;
+    gap: 36px;
   }
 
   html[data-language="en"] #about .about-copy p {
@@ -814,7 +814,7 @@ ul {
 }
 
 html[data-language="en"] #about .about-copy > p:not(.lead-paragraph) {
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .about-copy .lead-paragraph {
