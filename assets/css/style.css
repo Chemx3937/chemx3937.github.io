@@ -797,6 +797,10 @@ ul {
   margin-bottom: 22px;
 }
 
+#about .about-copy p:empty {
+  display: none;
+}
+
 .about-copy .lead-paragraph {
   color: var(--text);
   font-size: clamp(1.22rem, 2vw, 1.55rem);
