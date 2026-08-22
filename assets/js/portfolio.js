@@ -172,7 +172,21 @@
   const originalAlt = new Map(altElements.map((element) => [element, element.getAttribute('alt')]));
   let currentLanguage = 'en';
 
-  const hasKoreanTranslation = (key) => Object.prototype.hasOwnProperty.call(koreanTranslations, key);
+  // The Korean view currently localizes only the labels explicitly approved for the hero.
+  // All other content deliberately falls back to the original English source.
+  const activeKoreanTranslationKeys = new Set([
+    'hero.lede',
+    'hero.projects',
+    'hero.resume',
+    'hero.proofPatent',
+    'hero.proofAward',
+    'hero.proofInternship'
+  ]);
+
+  const hasKoreanTranslation = (key) => (
+    activeKoreanTranslationKeys.has(key)
+    && Object.prototype.hasOwnProperty.call(koreanTranslations, key)
+  );
 
   const readSavedLanguage = () => {
     try {
