@@ -47,10 +47,10 @@
     'hero.proofGpa': '<strong>M.S. GPA</strong><br>4.0 / 4.5 · SKKU',
 
     'about.kicker': '<span>01</span> 프로필',
-    'about.title': '<em>사람의 의도</em>와 로봇의 동작을 잇는 기술을 연구합니다.',
+    'about.title': '<em>사람의 의도</em>와 로봇의 동작을 잇는<br>방법을 연구합니다.',
     'about.lead': '로봇이 사람처럼 정교하게 움직이도록<br>물리적 상호작용이 반영된 고품질 데이터를 수집하고<br>이를 활용해 사람의 움직임을 효과적으로 학습시키는 방법을 연구합니다.',
     'about.teleopBody': '고품질 demonstration data 수집을 위해 설계된<br>force-feedback leader-arm teleoperation system과<br>별도의 VR-tracker teleoperation system을 구축했습니다.',
-    'about.learningBody': '여러 policy를 평가하고 내부 architecture를 개선해<br>learning performance를 높이며, vision–proprioception<br>policy architecture에 force를 추가 modality로 확장해<br>hand를 갖춘 dexterous dual-arm robot의<br>learning-based control을 연구합니다.',
+    'about.learningBody': '여러 policy를 평가하고 내부 architecture를 개선해<br>learning performance를 높이며, vision–proprioception<br>policy architecture에 force를 추가 modality로 확장해<br>dual arm - hand robot을 이용한 학습기반 제어를 연구합니다.',
     'about.rosBody': 'Doosan Robotics의 Robot Control Team 인턴십 동안<br>ROS 2 visual-servoing package를 개발했습니다.',
     'about.focusLearning': '정교한 manipulation을 위한 <strong>vision과 force 기반<br>Multimodal imitation learning</strong>으로, 여러 policy를 평가하고<br>내부 architecture를 개선합니다.',
     'about.focusTeleoperation': '고품질 demonstration data 수집을 위한<br><strong>Force-feedback leader-arm teleoperation</strong>과<br>별도의 VR-tracker teleoperation system을 구축했습니다.',
