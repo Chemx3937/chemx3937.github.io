@@ -48,12 +48,12 @@
 
     'about.kicker': '<span>01</span> 프로필',
     'about.title': '<em>사람의 의도</em>와 로봇의 동작을 잇는 기술을 연구합니다.',
-    'about.lead': '로봇이 사람처럼 정교하게 움직이게 하기위해<br>물리적 상호작용이 반영된 질좋은 데이터를 취득하는 방법과<br>이 데이터를 이용해 움직임을 어떻게 잘 배우게 할지를 연구합니다.',
-    'about.teleopBody': 'I have built a VR-tracker teleoperation system and, separately,<br>a force-feedback leader-arm teleoperation system<br>designed specifically to collect high-quality demonstration data.<br><br>I also developed a ROS 2 visual-servoing package<br>during an internship with the Robot Control Team at Doosan Robotics.',
-    'about.learningBody': 'For imitation learning, I have evaluated multiple policies<br>and modified their internal architectures to improve learning performance.<br><br>My current research extends vision–proprioception policy architectures<br>to learn from force as an additional modality for dexterous,<br>learning-based control of dual-arm robots with hands.',
-    'about.rosBody': '',
-    'about.focusLearning': '<strong>vision과 force를 활용한 multimodal imitation learning</strong>을 기반으로 dexterous manipulation을 연구하며, 여러 policy를 평가하고 내부 architecture를 개선합니다.',
-    'about.focusTeleoperation': '<strong>Force-feedback leader-arm teleoperation</strong>을 활용해 고품질 시연 데이터를 수집하며, 이와 별도로 VR-tracker teleoperation 시스템도 구축했습니다.',
+    'about.lead': '로봇이 사람처럼 정교하게 움직이도록<br>물리적 상호작용이 반영된 고품질 데이터를 수집하고<br>이를 활용해 사람의 움직임을 효과적으로 학습시키는 방법을 연구합니다.',
+    'about.teleopBody': '고품질 demonstration data 수집을 위해 설계된<br>force-feedback leader-arm teleoperation system과<br>별도의 VR-tracker teleoperation system을 구축했습니다.',
+    'about.learningBody': '여러 policy를 평가하고 내부 architecture를 개선해<br>learning performance를 높이며, vision–proprioception<br>policy architecture에 force를 추가 modality로 확장해<br>hand를 갖춘 dexterous dual-arm robot의<br>learning-based control을 연구합니다.',
+    'about.rosBody': 'Doosan Robotics의 Robot Control Team 인턴십 동안<br>ROS 2 visual-servoing package를 개발했습니다.',
+    'about.focusLearning': '정교한 manipulation을 위한 <strong>vision과 force 기반<br>Multimodal imitation learning</strong>으로, 여러 policy를 평가하고<br>내부 architecture를 개선합니다.',
+    'about.focusTeleoperation': '고품질 demonstration data 수집을 위한<br><strong>Force-feedback leader-arm teleoperation</strong>과<br>별도의 VR-tracker teleoperation system을 구축했습니다.',
     'about.focusControl': 'Impedance control, visual servoing 및 gravity compensation.',
 
     'projects.kicker': '<span>02</span> 프로젝트',
@@ -173,7 +173,7 @@
   const originalAlt = new Map(altElements.map((element) => [element, element.getAttribute('alt')]));
   let currentLanguage = 'en';
 
-  // The Korean view currently localizes only the labels explicitly approved for the hero.
+  // The Korean view localizes only the phrases explicitly selected for each page.
   // All other content deliberately falls back to the original English source.
   const activeKoreanTranslationKeys = new Set([
     'hero.lede',
@@ -182,10 +182,14 @@
     'hero.proofPatent',
     'hero.proofAward',
     'hero.proofInternship',
+    'about.title',
     'about.lead',
     'about.teleopBody',
     'about.learningBody',
-    'about.rosBody'
+    'about.rosBody',
+    'about.focusLearning',
+    'about.focusTeleoperation',
+    'about.focusControl'
   ]);
 
   const hasKoreanTranslation = (key) => (
