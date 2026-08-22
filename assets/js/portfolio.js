@@ -48,7 +48,7 @@
 
     'about.kicker': '<span>01</span> 프로필',
     'about.title': '<em>사람의 의도</em>와 로봇의 동작을 잇는 기술을 연구합니다.',
-    'about.lead': 'I am a Mechanical Engineering M.S. student<br>at Sungkyunkwan University specializing in robotics.<br><br>로봇이 사람처럼 정교하게 움직이게 하기위해<br>물리적 상호작용이 반영된 질좋은 데이터를 취득하는 방법과<br>이 데이터를 이용해 움직임을 어떻게 잘 배우게 할지를 연구합니다.',
+    'about.lead': '로봇이 사람처럼 정교하게 움직이게 하기위해<br>물리적 상호작용이 반영된 질좋은 데이터를 취득하는 방법과<br>이 데이터를 이용해 움직임을 어떻게 잘 배우게 할지를 연구합니다.',
     'about.teleopBody': 'I have built a VR-tracker teleoperation system and, separately,<br>a force-feedback leader-arm teleoperation system<br>designed specifically to collect high-quality demonstration data.<br><br>I also developed a ROS 2 visual-servoing package<br>during an internship with the Robot Control Team at Doosan Robotics.',
     'about.learningBody': 'For imitation learning, I have evaluated multiple policies<br>and modified their internal architectures to improve learning performance.<br><br>My current research extends vision–proprioception policy architectures<br>to learn from force as an additional modality for dexterous,<br>learning-based control of dual-arm robots with hands.',
     'about.rosBody': '',
