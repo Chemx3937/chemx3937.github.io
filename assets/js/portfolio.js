@@ -32,8 +32,8 @@
     'common.demo': '데모',
     'common.watchDemo': '데모 보기',
 
-    'hero.title': 'Vision–force learning으로 구현하는 <em>dexterous bimanual control.</em>',
-    'hero.lede': '힘&비전 멀티모달 고품질 데이터 취득 및 이를 이용한 학습 기반 양팔-핸드 제어를 연구합니다.',
+    'hero.title': '<span class="hero-title-line">Feedback-guided high-quality data collection</span><span class="hero-title-line">reflecting physical interactions.</span><span class="hero-title-line">Vision–force learning for</span><em class="hero-title-line">dexterous bimanual control.</em>',
+    'hero.lede': '힘&비전 멀티모달 고품질 데이터 취득 및 이를 이용한<br>학습 기반 양팔-핸드 제어를 연구합니다.',
     'hero.projects': '프로젝트',
     'hero.resume': '이력서',
     'hero.portraitAlt': 'Chemin Ahn의 프로필 사진',
