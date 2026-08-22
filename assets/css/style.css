@@ -805,12 +805,16 @@ ul {
   html[data-language="en"] #about .about-copy {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 42px;
   }
 
   html[data-language="en"] #about .about-copy p {
     margin-bottom: 0;
   }
+}
+
+html[data-language="en"] #about .about-copy > p:not(.lead-paragraph) {
+  font-size: 19px;
 }
 
 .about-copy .lead-paragraph {
@@ -822,7 +826,22 @@ ul {
 }
 
 .focus-list {
+  display: flex;
+  flex-direction: column;
   border-top: 1px solid var(--line);
+}
+
+html[data-language="en"] #about .focus-item-teleoperation {
+  order: -1;
+}
+
+html[data-language="en"] #about .focus-number {
+  font-size: 0;
+}
+
+html[data-language="en"] #about .focus-number::before {
+  content: attr(data-en-number);
+  font-size: 22px;
 }
 
 .focus-item {
