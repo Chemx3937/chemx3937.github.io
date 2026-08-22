@@ -32,7 +32,7 @@
     'common.demo': '데모',
     'common.watchDemo': '데모 보기',
 
-    'hero.title': '<span class="hero-title-line">Feedback-guided high-quality data collection</span><span class="hero-title-line">reflecting physical interactions.</span><span class="hero-title-line">Vision–force learning for</span><em class="hero-title-line">dexterous bimanual control.</em>',
+    'hero.title': '<span class="hero-title-line">From force-aware data</span><span class="hero-title-line">to learning-based</span><em class="hero-title-line">dexterous bimanual control.</em>',
     'hero.lede': '힘&비전 멀티모달 고품질 데이터 취득 및 이를 이용한<br>학습 기반 양팔-핸드 제어를 연구합니다.',
     'hero.projects': '프로젝트',
     'hero.resume': '이력서',
