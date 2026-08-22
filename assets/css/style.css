@@ -805,7 +805,7 @@ ul {
   html[data-language="en"] #about .about-copy {
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 26px;
   }
 
   html[data-language="en"] #about .about-copy p {
