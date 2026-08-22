@@ -188,6 +188,18 @@
     && Object.prototype.hasOwnProperty.call(koreanTranslations, key)
   );
 
+  const isActiveKoreanTranslation = (key, useKorean) => (
+    useKorean && hasKoreanTranslation(key)
+  );
+
+  const syncElementLanguage = (element, isKorean) => {
+    if (isKorean) {
+      element.setAttribute('lang', 'ko');
+    } else {
+      element.removeAttribute('lang');
+    }
+  };
+
   const readSavedLanguage = () => {
     try {
       const language = window.localStorage.getItem(storageKey);
@@ -225,16 +237,20 @@
 
     textElements.forEach((element) => {
       const key = element.dataset.i18n;
-      element.textContent = useKorean && hasKoreanTranslation(key)
+      const isKorean = isActiveKoreanTranslation(key, useKorean);
+      element.textContent = isKorean
         ? koreanTranslations[key]
         : originalText.get(element);
+      syncElementLanguage(element, isKorean);
     });
 
     htmlElements.forEach((element) => {
       const key = element.dataset.i18nHtml;
-      element.innerHTML = useKorean && hasKoreanTranslation(key)
+      const isKorean = isActiveKoreanTranslation(key, useKorean);
+      element.innerHTML = isKorean
         ? koreanTranslations[key]
         : originalHtml.get(element);
+      syncElementLanguage(element, isKorean);
     });
 
     ariaElements.forEach((element) => {
@@ -261,7 +277,8 @@
     setMetaContent('meta[name="twitter:title"]', pageMetadata.title);
     setMetaContent('meta[name="twitter:description"]', pageMetadata.socialDescription);
 
-    document.documentElement.lang = nextLanguage;
+    // The page keeps the English source layout; only the approved phrases are Korean.
+    document.documentElement.lang = 'en';
     document.documentElement.dataset.language = nextLanguage;
     languageButtons.forEach((button) => {
       button.setAttribute('aria-pressed', String(button.dataset.language === nextLanguage));
