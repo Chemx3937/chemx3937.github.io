@@ -48,7 +48,7 @@
 
     'about.kicker': '<span>01</span> 프로필',
     'about.title': '<em>사람의 의도</em>와 로봇의 동작을 잇는 기술을 연구합니다.',
-    'about.lead': '성균관대학교 기계공학과 석사과정에서 로보틱스를 전공하고 있습니다. 사람의 시연 데이터로부터 정밀하고 다양한 작업에 전이 가능한 조작 기술을 습득하는 manipulator 학습·제어 시스템을 연구합니다.',
+    'about.lead': 'I am a Mechanical Engineering M.S. student<br>at Sungkyunkwan University specializing in robotics.<br><br>로봇이 사람처럼 정교하게 움직이게 하기위해<br>물리적 상호작용이 반영된 질좋은 데이터를 취득하는 방법과<br>이 데이터를 이용해 움직임을 어떻게 잘 배우게 할지를 연구합니다.',
     'about.teleopBody': '고품질 시연 데이터 수집을 위해 force-feedback leader-arm teleoperation 시스템을 구축했고, 이와 별도로 VR-tracker teleoperation 시스템도 개발했습니다. 또한 Doosan Robotics의 Robot Control Team 인턴십에서 ROS 2 visual-servoing package를 개발했습니다.',
     'about.learningBody': 'Imitation Learning 분야에서는 여러 policy를 평가하고 내부 architecture를 수정해 학습 성능을 개선했습니다. 현재는 vision–proprioception policy architecture를 force까지 추가 modality로 학습할 수 있도록 확장하여, hand가 장착된 dual-arm robot의 dexterous manipulation을 위한 학습 기반 제어를 연구하고 있습니다.',
     'about.focusLearning': '<strong>vision과 force를 활용한 multimodal imitation learning</strong>을 기반으로 dexterous manipulation을 연구하며, 여러 policy를 평가하고 내부 architecture를 개선합니다.',
@@ -180,7 +180,8 @@
     'hero.resume',
     'hero.proofPatent',
     'hero.proofAward',
-    'hero.proofInternship'
+    'hero.proofInternship',
+    'about.lead'
   ]);
 
   const hasKoreanTranslation = (key) => (

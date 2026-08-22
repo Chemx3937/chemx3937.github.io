@@ -734,6 +734,10 @@ ul {
   color: var(--muted);
 }
 
+#about .section-kicker {
+  font-size: 18px;
+}
+
 .section-heading h2,
 .contact-layout h2 {
   margin-bottom: 0;
@@ -817,7 +821,7 @@ ul {
   padding-top: 3px;
   color: var(--teal);
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 22px;
   font-weight: 700;
 }
 
