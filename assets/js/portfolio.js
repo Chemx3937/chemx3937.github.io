@@ -44,7 +44,7 @@
     'hero.proofPatent': '<strong>특허 출원</strong><br>Force-feedback leader arm',
     'hero.proofAward': '<strong>로봇 학회 수상</strong><br>1st Prize · KRoC 2026 RED Show',
     'hero.proofInternship': '<strong>인턴</strong><br>Doosan Robotics · Jul - Oct 2024',
-    'hero.proofGpa': '<strong>석사과정 최종 학점</strong><br>4.0 / 4.5 · SKKU',
+    'hero.proofGpa': '<strong>M.S. GPA</strong><br>4.0 / 4.5 · SKKU',
 
     'about.kicker': '<span>01</span> 프로필',
     'about.title': '<em>사람의 의도</em>와 로봇의 동작을 잇는 기술을 연구합니다.',
