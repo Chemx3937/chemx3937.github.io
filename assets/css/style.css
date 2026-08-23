@@ -839,6 +839,12 @@ html[data-language="en"] #about .about-copy > p:not(.lead-paragraph) {
   border-bottom: 1px solid var(--line);
 }
 
+@media (min-width: 921px) {
+  html[data-language="en"] #about .focus-item {
+    padding: 12px 0;
+  }
+}
+
 .focus-number {
   padding-top: 3px;
   color: var(--teal);
@@ -897,6 +903,10 @@ html[data-language="en"] #about .about-copy > p:not(.lead-paragraph) {
 .focus-bullets strong {
   color: var(--teal);
   font-weight: 750;
+}
+
+html[data-language="en"] #about .focus-bullet-accent {
+  color: var(--teal);
 }
 
 /* Projects */
