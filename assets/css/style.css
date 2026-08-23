@@ -917,6 +917,7 @@ html[data-language="ko"] #about .about-copy > p:not(.lead-paragraph) {
 
 #about .focus-bullet-accent {
   color: var(--teal);
+  font-weight: 750;
 }
 
 /* Projects */
