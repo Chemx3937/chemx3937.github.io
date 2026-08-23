@@ -882,8 +882,16 @@ html[data-language="en"] #about .about-copy > p:not(.lead-paragraph) {
 }
 
 .focus-bullets ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 18px;
+  row-gap: 4px;
   margin: 4px 0 0;
   padding-left: 1.3em;
+}
+
+.focus-bullets ul li + li {
+  margin-top: 0;
 }
 
 .focus-bullets strong {
