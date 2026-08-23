@@ -751,6 +751,12 @@ ul {
   color: var(--teal);
 }
 
+@media (min-width: 921px) {
+  html[data-language="ko"] #about .about-title-line {
+    white-space: nowrap;
+  }
+}
+
 .section-heading-inverse .section-kicker {
   color: var(--mint);
 }
