@@ -802,18 +802,21 @@ ul {
 }
 
 @media (min-width: 921px) {
-  html[data-language="en"] #about .about-copy {
+  html[data-language="en"] #about .about-copy,
+  html[data-language="ko"] #about .about-copy {
     display: flex;
     flex-direction: column;
     gap: 26px;
   }
 
-  html[data-language="en"] #about .about-copy p {
+  html[data-language="en"] #about .about-copy p,
+  html[data-language="ko"] #about .about-copy p {
     margin-bottom: 0;
   }
 }
 
-html[data-language="en"] #about .about-copy > p:not(.lead-paragraph) {
+html[data-language="en"] #about .about-copy > p:not(.lead-paragraph),
+html[data-language="ko"] #about .about-copy > p:not(.lead-paragraph) {
   font-size: 18px;
 }
 
@@ -840,7 +843,8 @@ html[data-language="en"] #about .about-copy > p:not(.lead-paragraph) {
 }
 
 @media (min-width: 921px) {
-  html[data-language="en"] #about .focus-item {
+  html[data-language="en"] #about .focus-item,
+  html[data-language="ko"] #about .focus-item {
     padding: 12px 0;
   }
 }
@@ -905,7 +909,7 @@ html[data-language="en"] #about .about-copy > p:not(.lead-paragraph) {
   font-weight: 750;
 }
 
-html[data-language="en"] #about .focus-bullet-accent {
+#about .focus-bullet-accent {
   color: var(--teal);
 }
 

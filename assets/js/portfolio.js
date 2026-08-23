@@ -53,7 +53,7 @@
     'about.learningBody': '여러 policy를 평가하고 내부 architecture를 개선해<br>learning performance를 높이며, vision–proprioception<br>policy architecture에 force를 추가 modality로 확장해<br>dual arm - hand robot을 이용한 학습기반 제어를 연구합니다.',
     'about.rosBody': 'Doosan Robotics의 Robot Control Team 인턴십 동안<br>ROS 2 visual-servoing package를 개발했습니다.',
     'about.focusLearning': '<li><strong>Multimodal imitation learning (Vision - Force)</strong></li><li>Applied policies:<ul><li>Diffusion Policy</li><li>ACT</li><li>DiT Policy</li><li>ACP</li></ul></li>',
-    'about.focusTeleoperation': '<li>Force Feedback Leader Arm</li><li>Contact Observer</li><li>VR-tracker teleoperation system.</li>',
+    'about.focusTeleoperation': '<li class="focus-bullet-accent">Force Feedback Leader Arm</li><li class="focus-bullet-accent">Contact Observer</li><li>VR-tracker teleoperation system.</li>',
     'about.focusControl': '<li>Impedance Control</li><li>Gravity Compensation</li><li>Visual Servoing</li>',
 
     'projects.kicker': '<span>02</span> 프로젝트',
