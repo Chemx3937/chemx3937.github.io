@@ -2188,7 +2188,15 @@ html[data-language="ko"] #about .about-copy > p:not(.lead-paragraph) {
   }
 
   .hero-layout {
+    grid-template-columns: minmax(0, 1fr);
     gap: 48px;
+  }
+
+  .hero-copy,
+  .hero-visual {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
   }
 
   .hero h1 {
@@ -2205,9 +2213,20 @@ html[data-language="ko"] #about .about-copy > p:not(.lead-paragraph) {
   }
 
   .hero .eyebrow {
+    width: 100%;
     align-items: flex-start;
     font-size: 12px;
     letter-spacing: 0.07em;
+  }
+
+  .hero .eyebrow-copy {
+    min-width: 0;
+  }
+
+  .hero .eyebrow-copy strong,
+  .hero .eyebrow-copy small {
+    overflow-wrap: anywhere;
+    white-space: normal;
   }
 
   .hero .eyebrow-line {
@@ -2324,6 +2343,10 @@ html[data-language="ko"] #about .about-copy > p:not(.lead-paragraph) {
     flex-direction: column;
   }
 
+  .hero h1.hero-title-detail {
+    font-size: clamp(2rem, 8.4vw, 2.25rem);
+  }
+
   .button {
     width: 100%;
   }
@@ -2338,7 +2361,12 @@ html[data-language="ko"] #about .about-copy > p:not(.lead-paragraph) {
   }
 
   .portrait-shell {
-    width: 88%;
+    width: min(320px, 100%);
+  }
+
+  .portrait-caption {
+    right: 18px;
+    left: 18px;
   }
 
   .hero-card-row {
