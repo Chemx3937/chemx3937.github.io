@@ -2182,11 +2182,26 @@ html[data-language="ko"] #about .about-copy > p:not(.lead-paragraph) {
   }
 
   .hero {
-    padding-top: calc(var(--header-height) + 56px);
+    min-height: 0;
+    padding-top: calc(var(--header-height) + 40px);
+    padding-bottom: 64px;
+  }
+
+  .hero-layout {
+    gap: 48px;
   }
 
   .hero h1 {
     font-size: clamp(2.75rem, 12vw, 4.2rem);
+  }
+
+  .hero h1.hero-title-detail {
+    font-size: clamp(2.125rem, 9vw, 2.75rem);
+    line-height: 1.18;
+  }
+
+  .hero-title-line {
+    white-space: normal;
   }
 
   .hero .eyebrow {
@@ -2211,6 +2226,10 @@ html[data-language="ko"] #about .about-copy > p:not(.lead-paragraph) {
 
   .hero-card-row {
     width: min(430px, 100%);
+  }
+
+  .proof-grid {
+    margin-top: 52px;
   }
 
   .section {
@@ -2323,26 +2342,45 @@ html[data-language="ko"] #about .about-copy > p:not(.lead-paragraph) {
   }
 
   .hero-card-row {
-    width: min(350px, 100%);
-    grid-template-columns: 1fr;
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
   }
 
   .floating-card {
     min-height: 0;
+    padding: 15px;
+  }
+
+  .floating-label {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+  }
+
+  .floating-card strong {
+    font-size: 15px;
   }
 
   .proof-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .proof-item {
-    min-height: 90px;
-    padding-left: 0;
-    border-right: 0;
+    min-height: 96px;
+    padding-left: 16px;
+    border-right: 1px solid rgba(255, 255, 255, 0.13);
     border-bottom: 1px solid rgba(255, 255, 255, 0.13);
   }
 
-  .proof-item:last-child {
+  .proof-item:nth-child(odd) {
+    padding-left: 0;
+  }
+
+  .proof-item:nth-child(even) {
+    border-right: 0;
+  }
+
+  .proof-item:nth-child(n + 3) {
     border-bottom: 0;
   }
 
